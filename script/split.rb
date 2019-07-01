@@ -12,7 +12,7 @@ end
 field_count = YAML.load(headers).values.first['columns'].count
 
 chunk_number = 0
-records_per_chunk = ENV['RPC'] || 10
+records_per_chunk = ENV['RPC'].to_i || 10
 
 loop do
   chunk_filename = filename.sub(filename.extname, "_#{'%04d' % chunk_number}#{filename.extname}")
