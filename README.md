@@ -2,7 +2,7 @@
 ========================
 
 This app is a minimal Rails 3.2 skeleton capable of running the data conversion
-tasks required to migrate the [round-three](/umts/round-three) application from
+tasks required to migrate the [round-three][round-three] application from
 Postgres to Mariadb.
 
 With any luck, it will be a very short-lived project, deployed only for one
@@ -25,3 +25,6 @@ $ RPC=50000 ruby script/split.rb db/something/something.yml
 In addition, there is a "freedom-patch" located in `lib/tasks` that loads a
 data directory without truncating the table each time. This is for use on a
 directory that contains the output from the split script.
+
+[round-three]: https://github.com/umts/round-three
+[yaml_db]: https://github.com/yamldb/yaml_db
