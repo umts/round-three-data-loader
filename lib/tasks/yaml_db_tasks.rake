@@ -1,3 +1,4 @@
+# Freedom patch
 module YamlDb
   module RakeTasks
     def self.data_load_dir_without_truncating_task
@@ -7,6 +8,8 @@ module YamlDb
   end
 end
 
+# Although there's a mechanism in the API to load some data from a file or a
+# directory without wiping the table first, it's not surfaced to the Rake level
 namespace :db do
   namespace :data do
     desc "Load contents of db/data_dir into database skipping table truncation"
