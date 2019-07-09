@@ -64,6 +64,7 @@ GEM
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (4.2.0)
     polyglot (0.3.5)
+    power_assert (1.1.4)
     rack (1.4.7)
     rack-cache (1.9.0)
       rack (>= 0.4)
@@ -97,6 +98,8 @@ GEM
     sshkit (1.19.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    test-unit (3.3.3)
+      power_assert
     thor (0.20.3)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -116,6 +119,7 @@ DEPENDENCIES
   capistrano-pending
   mysql2!
   rails (~> 3.2)
+  test-unit
   yaml_db
 
 BUNDLED WITH
